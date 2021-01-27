@@ -1,0 +1,30 @@
+.basic-accordion{
+    width: 500px;
+    border: 1px solid black;
+    padding: 4px;
+    .panel{
+        border: 2px solid rgb(151, 131, 131);
+        width: 100%;
+        margin-bottom: 5px;
+        .panel-header{
+            border: 1px solid rgb(151, 131, 131);
+            cursor: pointer;
+        }
+    
+        .panel-body{
+            border: 1px solid lightgray;
+        }
+    }
+}
+
+.active{
+    padding: 10px 0px ;
+    transition: all .2s linear;
+}
+
+.passive{
+    height: 0px;
+    overflow: hidden;
+    transition: all .2s linear;
+}
+

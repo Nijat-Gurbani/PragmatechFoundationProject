@@ -1,0 +1,34 @@
+.basic-accordion {
+  width: 500px;
+  border: 1px solid black;
+  padding: 4px;
+}
+
+.basic-accordion .panel {
+  border: 2px solid #978383;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.basic-accordion .panel .panel-header {
+  border: 1px solid #978383;
+  cursor: pointer;
+}
+
+.basic-accordion .panel .panel-body {
+  border: 1px solid lightgray;
+}
+
+.active {
+  padding: 10px 0px;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.passive {
+  height: 0px;
+  overflow: hidden;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+/*# sourceMappingURL=style.css.map */
