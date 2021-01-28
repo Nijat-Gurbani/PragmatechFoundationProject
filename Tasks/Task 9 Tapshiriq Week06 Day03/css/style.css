@@ -1,0 +1,56 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  background-color: lightseagreen;
+}
+
+.row {
+  border: 2px dashed #4adb36;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1200px;
+  padding: 15px;
+  margin-left: 50px;
+  background-color: white;
+}
+
+.generate, #generated {
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.generate, input, select {
+  padding: 5px;
+  border: 1px solid lightseagreen;
+  border-radius: 5px;
+}
+
+#generate-Btn {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: lightgray;
+  border: outset;
+  margin-left: 400px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#generate-Img {
+  height: 350px;
+  width: 100%;
+  border-radius: 3px;
+  border: 2px solid lightgrey;
+  margin: 0px;
+}
+/*# sourceMappingURL=style.css.map */
