@@ -1,0 +1,129 @@
+/*Headings*/
+
+.headings{
+    margin: 50px 0;
+    max-width: 100%;
+    height: 220px;
+    background-image: url('../../image/Services/service\ -\ detail.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    .container{
+      
+        h3{
+            top: 50px;
+            font-family: $main-font;
+            font-size: 50px;
+            font-weight: 1000;
+            color: white;
+            text-align: center !important;
+        }
+    }
+    
+}
+
+
+
+
+/*Service Details*/
+$base-color: #303F9F;
+$second-color: #3F51B5;
+$third-color: #FBC02D;
+$site: #303F9F;
+$light: #fff;
+
+
+.container {
+ list-style: none;
+}
+
+#service-heading {
+ padding-left: 40px;
+
+}
+
+.list{
+ width: 33.33333%;
+}
+
+.lister {
+ width: 66.66666%;
+}
+
+.service-detail {
+ position: relative;
+ max-width: 100%;
+ margin: 50px 0;
+}
+
+.service-detail .menu div {
+ padding: 15px 20px 15px 40px;
+ margin-bottom: 5px;
+ color: black;
+ background: white; 
+ cursor: pointer;
+ position: relative;
+ font-size: 23px;
+ font-weight: 500;
+ transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.service-detail .menu div:hover {
+ background-color: #18BA60;
+}
+
+.service-detail .menu div span.light {
+ height: 10px;
+ width: 10px;
+ position: absolute;
+ top: 24px;
+ left: 15px;
+ background-color: $base-color;
+ border-radius: 100%;
+ transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.service-detail .menu div.active span.light {  
+ background-color: wheat;
+
+ left: 0;
+ height: 100%;
+ width: 3px;
+ top: 0;
+ border-radius: 0;
+}
+
+.service-detail .menu div.active {
+background-color:#18BA60;
+ color: white;
+ padding: 15px 20px 15px 20px;
+}
+
+ul.text {
+ position: relative;
+ height: 0px;
+ list-style: none;
+ margin: 0;
+ padding: 0;
+ transition: .5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+ul.text li {
+ opacity: 0;
+ transform: translateX(50px);
+ position: absolute;
+ list-style: none;
+ transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+ul.text li.active {
+ transition-delay: .3s;
+ z-index: 2;
+ opacity: 1;
+ transform: translateX(0px);
+}
+
+ul.text li p {
+ margin: 0;
+}

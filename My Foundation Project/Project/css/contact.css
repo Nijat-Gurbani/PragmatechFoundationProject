@@ -1,0 +1,174 @@
+/*Firs Footer*/
+
+
+/*Social Media*/
+.top-footer .first-footer  {
+    background: #25272e;
+    background-size: cover;
+    color: #fff;
+    padding: 70px 0; 
+  }
+  
+  .first-footer .logo img {
+    width: 90px;
+    height: auto;
+    margin-bottom: 50px; 
+  }
+  
+  .first-footer .netabout p {
+    margin-bottom: 25px;
+    font-weight: 300; 
+  }
+  
+  .first-footer .netsocials {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+  }
+  
+  .first-footer .netsocials a .fab {
+    font-size: 25px;
+    text-align: center;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 45px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 20px;
+    transition: all .5s ease; 
+  }
+  
+  .first-footer .netsocials a .fa-facebook-f {
+    color: #fff; 
+  }
+  
+  .first-footer .netsocials a .fa-facebook-f:hover {
+    background: #3b5998;
+    color: #fff; 
+  }
+  
+  .first-footer .netsocials a .fa-twitter {
+    color: #fff; 
+  }
+  
+  .first-footer .netsocials a .fa-twitter:hover {
+    background: #1da1f2;
+    color: #fff; 
+  }
+  
+  .first-footer .netsocials a .fa-linkedin-in {
+    color: #fff; 
+  }
+  
+  .first-footer .netsocials a .fa-linkedin-in:hover {
+    background: #0A66C2;
+    color: #fff; 
+  }
+  
+
+  /*contact-info*/
+   .contact h3 {
+    font-size: 25px;
+    margin-bottom: 50px;
+  }
+  
+  .first-footer .contact h3::after {
+    display: block;
+    height: 3px;
+    background-color: #18ba60;
+    content: " ";
+    width: auto;
+    margin-top: 20px;
+   }
+  
+  
+   .first-footer .top-footer {
+      padding-bottom: 30px; 
+    } 
+  .first-footer .contactus .info {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 15px; 
+  }
+  
+  .first-footer .contactus .ti {
+    margin-bottom: 0px; 
+  }
+  
+  .first-footer .contactus .info p {
+    margin: 0px;
+    margin-left: 1.5rem;
+    font-weight: 300; 
+  }
+  
+  .first-footer .contactus ul li {
+    margin-bottom: 1rem;
+    border-bottom: 1px dotted #464646; 
+  }
+  
+  .first-footer .contactus ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+  }
+  
+  .first-footer .contactus ul li .fa {
+    font-size: 1.6rem;
+    color: #fff; 
+  }
+
+
+
+
+
+    /*form-mail*/
+
+    .mail h3{
+      font-size: 25px;
+      margin-bottom: 50px;
+    }
+    .first-footer .mail h3::after {
+      display: block;
+      height: 3px;
+      background-color: #18ba60;
+      content: " ";
+      width: auto;
+      margin-top: 20px;
+     }
+
+    .form-group{
+       
+        margin-bottom: 15px;
+    }
+   .form-control{
+       height: 50px;
+       border: 2px solid black;
+       width: 100%;
+   }
+   
+  .contact-form .btn {
+    border: 1px solid #fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    background: #18ba60;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    border-radius: 0.3rem;
+}
+
+
+
+/*Second Footer*/
+.top-footer .second-footer{
+  padding: 15px 0;
+  background: rgba(37, 39, 46, 0.8);
+}
+.second-footer p{
+  color: white;
+  font-size: 20px;
+  text-align: right;
+  font-weight: 500;
+}

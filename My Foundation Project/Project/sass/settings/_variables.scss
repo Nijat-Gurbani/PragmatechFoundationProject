@@ -1,0 +1,35 @@
+/*Color*/
+$main-section-color-1:#F1EDDF;
+$main-section-color-2:#F9F9F9;
+$main-h-color:#3B3B3B;
+$main-p-color:#909090;
+
+/*Font*/
+$main-font:'Roboto', sans-serif;
+
+
+// h-headings
+/*h2*/
+/*h4*/
+
+//border
+$main-column-border:1px solid #e6e6e6;
+$main-section-border:1px solid #efefef;
+
+/* P-class*/
+%paragraph{
+    font-size: 18px;
+    font-weight: 200;
+    color: $main-p-color;
+    line-height: 150%;
+    margin-bottom: 0px;
+}
+
+// column
+
+/*section padding*/
+
+%padding{
+    padding:50px 0px;
+}
+
