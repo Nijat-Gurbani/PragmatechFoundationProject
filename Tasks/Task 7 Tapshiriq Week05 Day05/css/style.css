@@ -6,11 +6,10 @@ body {
   width: 700px;
   height: 500px;
   border: 1px solid lightskyblue;
-  padding: 10px 40px;
 }
 
 .images .img {
-  width: 600px;
+  width: 700px;
 }
 
 .images .images-body {

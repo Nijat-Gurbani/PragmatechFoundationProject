@@ -2,25 +2,25 @@ let slider = [
     {
 
         name:'Adventurer Lemon',
-        image:'img/1.jpg'
+        image:'./img/1.jpg'
 
     },
     {
 
         name:'Adventurer Donut',
-        image:'img/2.jpg'
+        image:'./img/2.jpg'
 
     },
     {
 
         name:'Adventurer Caramel',
-        image:'img/3.jpg'
+        image:'./img/3.jpg'
 
     },
     {
 
         name:'Adventurer Cheesecake Brownie',
-        image:'img/4.jpg'
+        image:'./img/4.jpg'
 
     }
 
