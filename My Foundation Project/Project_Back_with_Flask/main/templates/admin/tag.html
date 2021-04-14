@@ -1,0 +1,26 @@
+{% extends "admin/index.html" %}
+{% block page %}
+<h3>Tag-lar</h4>
+<a href="/admin/tag/add_tag"><button class="btn btn-primary">Yeni Tag Yarat</button></a>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Adi</th>
+        <th scope="col">Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for tag in all_tag %}
+    <tr>
+        <th>{{tag.id}}</th>
+        <td>{{tag.name}}</td>
+        <td>
+            <a class="p-2 mb-2 bg-danger text-white" href="/admin/tag/delete/{{tag.id}}">Sil</a>
+            <a class="p-2 mb-2 bg-primary text-white" href="/admin/tag/update/{{tag.id}}">Yenile</a>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

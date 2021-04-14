@@ -1,0 +1,31 @@
+{% extends "admin/index.html" %}
+{% block page %}
+<h3>Proyektler</h3>
+    <a href="/admin/project/add_project"><button class="btn btn-primary">Yeni Project yarat</button></a>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Proyektin Adi</th>
+            <th scope="col">Sirket</th>
+            <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for project in all_project %}
+            <tr>
+                <th>{{project.id}}</th>
+                <td>{{project.name}}</td>
+                <td>{{project.company}}</td>
+                <td>
+                    <a class="p-2 mb-2 bg-danger text-white" href="/admin/project/delete/{{project.id}}">Sil</a>
+                    <a class="p-2 mb-2 bg-primary text-white" href="/admin/project/update/{{project.id}}">Yenile</a>
+                </td>
+            </tr>
+            {% endfor %}
+            
+        </tbody>
+      </table>
+<br>
+
+{% endblock %}

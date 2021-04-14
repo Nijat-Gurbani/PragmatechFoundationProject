@@ -1,0 +1,13 @@
+{% extends "admin/index.html" %}
+{% block page %}
+<div class="container">
+    <h2>Yeni Kategoriya Elave Et</h2>
+    <form action="/admin/project_category/add_category" method="POST" enctype="multipart/form-data">
+        <div class="form-group my-2">
+            <input type="text" name="name" class="form-control" placeholder="Kateqoriya adi">
+        </div>
+        <div class="form-group ">
+            <input type="submit" class="btn btn-primary" value="Əlavə Et">
+        </div>
+</div>
+{% endblock %}

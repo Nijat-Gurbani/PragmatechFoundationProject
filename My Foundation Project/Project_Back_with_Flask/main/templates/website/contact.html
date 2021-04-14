@@ -1,0 +1,77 @@
+{% block contact %}
+<section id="contact">
+    <div class="top-footer">
+        <div class="first-footer">
+            <div class="container">
+                <div class="row">
+                    <!-- Social Media -->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="netabout">
+                            <a href="" class="logo">
+                                <img src="" alt="lOGO">
+                            </a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum incidunt architecto soluta laboriosam, perspiciatis, aspernatur officiis esse.</p>
+                        </div>
+                        <ul class="netsocials">
+                            <li><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- Contact -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 contact">
+                        <div class="contactus">
+                            <h3>Contact Us</h3>
+                            <ul>
+                                <li>
+                                    <div class="info">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        <p class="in-p">Baku, USA</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="info">
+                                        <i class="fa fa-phone" aria-hidden="true"></i>
+                                        <p class="in-p">+(994) 00 000 00 00</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="info">
+                                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                                        <p class="in-p ti">info@project.az</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Mail -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 mail">
+                        <h3>Have a Question?</h3>
+                        <form action="/website/contact" id="contactform" class="contact-form" name="contactform" method="POST" novalidate>
+                            <div class="form-group">
+                                <input type="text" required class="form-control input-custom input-full" name="fullname" placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control input-custom input-full" name="email" placeholder="Your Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control input-custom input-full" name="subject" placeholder="Subject">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control textarea-custom input-full" id="" name="message" required rows="1" placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="submit" id="submit-contact" class="btn btn-primary btn-lg">Send Request</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="second-footer">
+            <div class="container">
+                <p>2021 © Copyright - All Rights Reserved.</p>  
+            </div>
+        </div>
+
+    </div>
+    </section>
+{% endblock %}

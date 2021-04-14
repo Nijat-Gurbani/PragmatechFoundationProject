@@ -1,0 +1,18 @@
+{% extends "admin/index.html" %}
+{% block page %}
+<div class="container">
+    <h2>Yeni Isci elave et</h2>
+    <form action="/admin/team/add_team" method="POST" enctype="multipart/form-data">
+        <div class="form-group my-2">
+            <input type="text" name="fullname" class="form-control" placeholder="Ad Soyad">
+        </div>
+        <div class="form-group my-2">
+            <input type="text" name="duty" class="form-control" placeholder="Vezife">
+        </div>
+        <div class="form-group my-2">
+            <input type="file" name="image" class="form-control" placeholder="Şəkil">
+        </div>
+        <input type="submit" value="Əlavə et">
+      </form>
+</div>
+{% endblock %}

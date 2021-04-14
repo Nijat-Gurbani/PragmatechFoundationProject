@@ -1,0 +1,32 @@
+{% extends "admin/index.html" %}
+{% block page %}
+<h3>Isciler</h4>
+    <a href="/admin/team/add_team"><button class="btn btn-primary">Yeni Isci elave et</button></a>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Adi</th>
+            <th scope="col">Vezife</th>
+            <th scope="col">Sekil</th>
+            <th scope="col">Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        
+        {% for user in all_team_user %}
+        
+        <tr>
+            <th>{{user.id}}</th>
+            <td>{{user.fullname}}</td>
+            <td>{{user.duty}}</td>
+            <td>{{user.image}}</td>
+            <td>
+                <a class="p-2 mb-2 bg-danger text-white" href="/admin/team/delete/{{user.id}}">Sil</a>
+                <a class="p-2 mb-2 bg-primary text-white" href="/admin//team/update/{{user.id}}">Yenile</a>
+            </td>
+        </tr>
+        {% endfor %}   
+        </tbody>
+      </table>
+{% endblock %}

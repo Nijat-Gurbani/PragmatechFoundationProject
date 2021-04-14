@@ -1,0 +1,32 @@
+{% extends "admin/index.html" %}
+
+{% block page %}
+<h3>Tekliflerimiz</h4>
+<a href="/admin/offer/add_offer"><button class="btn btn-primary">Yeni Teklif Yarat</button></a>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Adi</th>
+        <th scope="col">Açıqlama</th>
+        <th scope="col">Sekil</th>
+        <th scope="col">Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        {% for offer in all_offer %}
+        <tr>
+            <th>{{offer.id}}</th>
+            <td>{{offer.title}}</td>
+            <td>{{offer.content}}</td>
+            <td>{{offer.image}}</td>
+            <td>
+                <a class="p-2 mb-2 bg-danger text-white" href="/admin/offer/delete/{{offer.id}}">Sil</a>
+                <a class="p-2 mb-2 bg-primary text-white" href="/admin/offer/update/{{offer.id}}">Yenile</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

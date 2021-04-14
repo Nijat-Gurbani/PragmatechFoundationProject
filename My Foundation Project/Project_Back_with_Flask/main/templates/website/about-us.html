@@ -14,93 +14,21 @@
 </head>
 <body>
     <!-- Top Header -->
-<section>
-        <div class="header-top">
-            <div class="container">
-                <div class="top-info">
-                    <div class="call-header">
-                        <p><i class="fa fa-phone" aria-hidden="true"></i> +(994) 00 000 00 00</p>
-                    </div>
-                    <div class="address-header">
-                        <p><i class="fa fa-map-marker" aria-hidden="true"></i> Baku, Azerbaijan</p>
-                    </div>
-                    <div class="mail-header">
-                        <p><i class="fa fa-envelope" aria-hidden="true"></i> info@project.az</p>
-                    </div>
-                </div>
-                <div class="top-social">
-                    <div class="social-icons-header">
-                        <div class="social-icons">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    {% include 'website/top_header.html'%}
   <!-- Section Header menu  -->
-  <section>   
-    <div id="navbar">
-        <div class="container">
-            <div class="row ">
-                <div class="col-12 menu">
-    
-                    <div class="header-logo">
-                        <a href="homepage.html"><h3> Şirkət logo</h3></a>
-                    </div>
-    
-                    <div class="header-menu">
-                      <ul class="nav ">
-    
-                          <li class="nav-item">
-                            <a href="#">Home</a>
-                          </li>
-    
-                          <li class="nav-item">
-                            <a href="#">About Us</a>
-                          </li>
-    
-                          <li class="nav-item">
-                            <a href="service-detail.html">Services</a>
-                          </li>
-    
-                          <li class="nav-item">
-                            <a href="project-detail.html">Project</a>
-                          </li>
-    
-                          <li class="nav-item">
-                            <a href="blog.html">Blog</a>
-                          </li>
-    
-                          <li class="nav-item">
-                            <a href="our-team.html">Team</a>
-                          </li>
-    
-                          <li class="nav-item">
-                            <a href="#contact" >Contact Us</a>
-                          </li>
-    
-                      </ul>
-                  </div>
-                </div>
-             </div>
-      </div>
-    </div>
-        </section>
-
-
+  {% include 'website/navbar.html'%}
      <!-- Header Detail-->
-<section>
-    <div class="header-img">
-        <div class="container">
-            <h3>About</h3>
-        </div>
-    </div>
-  </section>
-
+     <section>
+        <div class="slideshow-container">
+                
+            <div class="mySlides fade">
+                <img src="../../static/website/image/Services/detail.jpg">
+                <div class="title">DDD</div>
+                <div class="content">SSS</div>
+            </div>
+        
+        </div>  
+    </section>
 
 
 <section class="about-us">
@@ -201,48 +129,7 @@
 </section>
 
 <!-- Section Portfolio -->
-<section>
-    <div id="section-statistic">
-         <div class="section-image" style="background-image: url(../../static/website/image/background/parallax-1.jpg);">
-            <div class="container">
-                <div class="statistic-heading">
-                    <h2>Some <span>Statistics</span></h2>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                        <div class="countup-box">
-                            <i class="far fa-smile"></i>
-                                <div class="countup-text te">
-                                    <p> +<span class="project"> 100 </span></p>
-                                     <h3> Our Project </h3>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                        <div class="countup-box">
-                            <i class="far fa-handshake"></i>
-                                <div class="countup-text">
-                                    <p> +<span class="partner"> 100 </span></p>
-                                     <h3> Our Partner </h3>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                        <div class="countup-box">
-                            <i class="far fa-user"></i>
-                                <div class="countup-text">
-                                    <p> +<span class="member"> 100 </span></p>
-                                     <h3> Our Team </h3>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-    </section>
-
+{% include 'website/portfolio.html'%}
 
 <!-- Team Members -->
 <section class="team">
@@ -350,82 +237,7 @@
 
 
 <!-- Contact -->
-<section id="contact">
-    <div class="top-footer">
-        <div class="first-footer">
-            <div class="container">
-                <div class="row">
-                    <!-- Social Media -->
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="netabout">
-                            <a href="" class="logo">
-                                <img src="" alt="lOGO">
-                            </a>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum incidunt architecto soluta laboriosam, perspiciatis, aspernatur officiis esse.</p>
-                        </div>
-                        <ul class="netsocials">
-                            <li><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
-                    <!-- Contact -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 contact">
-                        <div class="contactus">
-                            <h3>Contact Us</h3>
-                            <ul>
-                                <li>
-                                    <div class="info">
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <p class="in-p">Baku, USA</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="info">
-                                        <i class="fa fa-phone" aria-hidden="true"></i>
-                                        <p class="in-p">+(994) 00 000 00 00</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="info">
-                                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                                        <p class="in-p ti">info@project.az</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Mail -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 mail">
-                        <h3>Have a Question?</h3>
-                        <form id="contactform" class="contact-form" name="contactform" method="post" novalidate>
-                            <div class="form-group">
-                                <input type="text" required class="form-control input-custom input-full" name="firstname" placeholder="Your Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" required class="form-control input-custom input-full" name="phonenumber" placeholder="Phone Number">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control input-custom input-full" name="email" placeholder="Your Email">
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control textarea-custom input-full" id="ccomment" name="message" required rows="1" placeholder="Your Message"></textarea>
-                            </div>
-                            <button type="submit" id="submit-contact" class="btn btn-primary btn-lg">Send Request</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="second-footer">
-            <div class="container">
-                <p>2021 © Copyright - All Rights Reserved.</p>  
-            </div>
-        </div>
-
-    </div>
-    </section>
-
+{% include 'website/contact.html'%}
 
 
     <a href="#" class="scroll-to-top" style="display: block;"> <i class="fas fa-angle-up"></i></a>

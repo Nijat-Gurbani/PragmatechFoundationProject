@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../../main/static/website/css/Responsive Grid System/grid.css">
-    <link rel="stylesheet" href="../../../main/static/website/css/style.css">
-    <link rel="stylesheet" href="../../../main/static/website/css/contact.css">
+    <link rel="stylesheet" href="../../static/website/css/Responsive Grid System/grid.css">
+    <link rel="stylesheet" href="../../static/website/css/style.css">
+    <link rel="stylesheet" href="../../static/website/css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -15,98 +15,27 @@
 <body>
 
  <!-- Top Header -->
- <section>
-    <div class="header-top">
-        <div class="container">
-            <div class="top-info">
-                <div class="call-header">
-                    <p><i class="fa fa-phone" aria-hidden="true"></i> +(994) 00 000 00 00</p>
-                </div>
-                <div class="address-header">
-                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> Baku, Azerbaijan</p>
-                </div>
-                <div class="mail-header">
-                    <p><i class="fa fa-envelope" aria-hidden="true"></i> info@project.az</p>
-                </div>
-            </div>
-            <div class="top-social">
-                <div class="social-icons-header">
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </section>
+ {% include 'website/top_header.html'%}
 
   <!-- Section Header menu  -->
-  <section>   
-    <div id="navbar">
-        <div class="container">
-            <div class="row ">
-                <div class="col-12 menu">
-    
-                    <div class="header-logo">
-                        <a href="homepage.html"><h3> Şirkət logo</h3></a>
-                    </div>
-    
-                    <div class="header-menu">
-                      <ul class="nav ">
-    
-                          <li class="nav-item">
-                            <a href="homepage.html">Home</a>
-                          </li>
-    
-                          <li class="nav-item">
-                            <a href="about-us.html">About Us</a>
-                          </li>
-    
-                          <li class="nav-item">
-                            <a href="service-detail.html">Services</a>
-                          </li>
-    
-                          <li class="nav-item">
-                            <a href="project-detail.html">Project</a>
-                          </li>
-    
-                          <li class="nav-item">
-                            <a href="blog.html">Blog</a>
-                          </li>
-    
-                          <li class="nav-item">
-                            <a href="our-team.html">Team</a>
-                          </li>
-    
-                          <li class="nav-item">
-                            <a href="#contact" >Contact Us</a>
-                          </li>
-    
-                      </ul>
-                  </div>
-                </div>
-             </div>
-      </div>
-    </div>
-        </section>
- 
+  {% include 'website/navbar.html'%}
     
     <!-- Header Detail-->
     <section>
-        <div class="header-img">
-            <div class="container">
-                <h3>Service Details</h3>
+        <div class="slideshow-container">
+                
+            <div class="mySlides fade">
+                <img src="../../static/website/image/Services/detail.jpg">
+                <div class="title">DDD</div>
+                <div class="content">SSS</div>
             </div>
-        </div>
+        
+        </div>  
     </section>
-
 
     
     <!-- Section Service -->    
     <section>
-        <div class="section-service">
             <div class="service-detail">
                <div class="container">
                 <div class="row">
@@ -124,7 +53,7 @@
                         <ul class="text">
                             <li class="active"> 
                                 <div class="service-box"> 
-                                    <img src="../../../main/static/website/image/Services/inst-7.jpg" alt="">
+                                    <img src="../../static/website/image/Services/inst-7.jpg" alt="">
                                     <div class="detail-heading"> <h3> Financial <span class="font-weight-bold"> Planning </span> </h3></div>
                                     <div class="detail-text">
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam asperiores reiciendis iste, possimus nobis totam ullam quae est, sunt pariatur commodi vitae blanditiis fuga eius enim earum nostrum quas illum!</p>
@@ -137,7 +66,7 @@
                             </li>
                             <li class="article"> 
                                 <div class="service-box"> 
-                                    <img src="../../../main/static/website/image/Services/inst-7.jpg" alt="">
+                                    <img src="../../static/website/image/Services/inst-7.jpg" alt="">
                                     <div class="detail-heading"> <h3>Tax <span class="font-weight-bold">Services</span> </h3></div>
                                     <div class="detail-text">
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam asperiores reiciendis iste, possimus nobis totam ullam quae est, sunt pariatur commodi vitae blanditiis fuga eius enim earum nostrum quas illum!</p>
@@ -151,7 +80,7 @@
                             </li>
                             <li class="article"> 
                                 <div class="service-box"> 
-                                    <img src="../../../main/static/website/image/Services/inst-7.jpg" alt="">
+                                    <img src="../../static/website/image/Services/inst-7.jpg" alt="">
                                     <div class="detail-heading"> <h3> <span class="font-weight-bold"> Audit </span> </h3></div>
                                     <div class="detail-text">
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam asperiores reiciendis iste, possimus nobis totam ullam quae est, sunt pariatur commodi vitae blanditiis fuga eius enim earum nostrum quas illum!</p>
@@ -164,7 +93,7 @@
                             </li>
                             <li class="article"> 
                                 <div class="service-box"> 
-                                    <img src="../../../main/static/website/image/Services/inst-7.jpg" alt="">
+                                    <img src="../../static/website/image/Services/inst-7.jpg" alt="">
                                     <div class="detail-heading"> <h3> <span class="font-weight-bold"> Accounting </span> </h3></div>
                                     <div class="detail-text">
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam asperiores reiciendis iste, possimus nobis totam ullam quae est, sunt pariatur commodi vitae blanditiis fuga eius enim earum nostrum quas illum!</p>
@@ -177,7 +106,7 @@
                             </li>
                             <li class="article"> 
                                 <div class="service-box"> 
-                                    <img src="../../../main/static/website/image/Services/inst-7.jpg" alt="">
+                                    <img src="../../static/website/image/Services/inst-7.jpg" alt="">
                                     <div class="detail-heading"> <h3> <span class="font-weight-bold"> Assessment </span> </h3></div>
                                     <div class="detail-text">
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam asperiores reiciendis iste, possimus nobis totam ullam quae est, sunt pariatur commodi vitae blanditiis fuga eius enim earum nostrum quas illum!</p>
@@ -190,7 +119,7 @@
                             </li>
                             <li class="article"> 
                                 <div class="service-box"> 
-                                    <img src="../../../main/static/website/image/Services/inst-7.jpg" alt="">
+                                    <img src="../../static/website/image/Services/inst-7.jpg" alt="">
                                     <div class="detail-heading"> <h3> BC <span class="font-weight-bold"> Service </span> </h3></div>
                                     <div class="detail-text">
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam asperiores reiciendis iste, possimus nobis totam ullam quae est, sunt pariatur commodi vitae blanditiis fuga eius enim earum nostrum quas illum!</p>
@@ -207,153 +136,19 @@
                 </div>
                </div>
             </div>
-
-            <div class="department-detail">
-                <div class="container">
-                    <div class="department-heading">
-                        <h3>OUR <span class="font-weight-bold">BUSINESS PLANNING</span></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, dolor earum. Exercitationem excepturi ipsa illo.</p>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6 col-xs-12 col-sm-12 col-md-6">
-                            <div class="depart-title">
-                                <h4>TAXING RELATIONSHIPS</h4>
-                            </div>
-                            <div class="depart-list">
-                                <ul>
-                                    <li>SMALL BUDGETS</li>
-                                    <li>FINANCIAL STABILITY</li>
-                                    <li>ADMINISTRATIVE SERVICES</li>
-                                    <li>COMPREHENSIVE SOLUTION</li>
-                                    <li>FINANCIAL CONSULTATION</li>
-                                    <li>TAX SERVICES</li>
-                                </ul>
-                                <ul class="chart-list">
-                                    <li><i class="fas fa-chart-pie" aria-hidden="true"></i></li>
-                                    <li><i class="fas fa-chart-pie" aria-hidden="true"></i></li>
-                                    <li><i class="fas fa-chart-pie" aria-hidden="true"></i></li>
-                                    <li><i class="fas fa-chart-pie" aria-hidden="true"></i></li>
-                                    <li><i class="fas fa-chart-pie" aria-hidden="true"></i></li>
-                                    <li><i class="fas fa-chart-pie" aria-hidden="true"></i></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-xs-12 col-sm-12 col-md-6">
-                            <div class="depart-title">
-                                <h4>TAXING RELATIONSHIPS</h4>
-                            </div>
-                            <div class="depart-list">
-                                <ul>
-                                    <li>SMALL BUDGETS</li>
-                                    <li>FINANCIAL STABILITY</li>
-                                    <li>ADMINISTRATIVE SERVICES</li>
-                                    <li>COMPREHENSIVE SOLUTION</li>
-                                    <li>FINANCIAL CONSULTATION</li>
-                                    <li>TAX SERVICES</li>
-                                </ul>
-                                <ul class="chart-list">
-                                    <li><i class="fas fa-chart-pie" aria-hidden="true"></i></li>
-                                    <li><i class="fas fa-chart-pie" aria-hidden="true"></i></li>
-                                    <li><i class="fas fa-chart-pie" aria-hidden="true"></i></li>
-                                    <li><i class="fas fa-chart-pie" aria-hidden="true"></i></li>
-                                    <li><i class="fas fa-chart-pie" aria-hidden="true"></i></li>
-                                    <li><i class="fas fa-chart-pie" aria-hidden="true"></i></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
     
     
     <!-- Section Contact -->
-    <section id="contact">
-        <div class="top-footer">
-            <div class="first-footer">
-                <div class="container">
-                    <div class="row">
-                        <!-- Social Media -->
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="netabout">
-                                <a href="" class="logo">
-                                    <img src="" alt="lOGO">
-                                </a>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum incidunt architecto soluta laboriosam, perspiciatis, aspernatur officiis esse.</p>
-                            </div>
-                            <ul class="netsocials">
-                                <li><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a></li>
-                            </ul>
-                        </div>
-                        <!-- Contact -->
-                        <div class="col-lg-4 col-md-6 col-sm-12 contact">
-                            <div class="contactus">
-                                <h3>Contact Us</h3>
-                                <ul>
-                                    <li>
-                                        <div class="info">
-                                            <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                            <p class="in-p">Baku, USA</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="info">
-                                            <i class="fa fa-phone" aria-hidden="true"></i>
-                                            <p class="in-p">+(994) 00 000 00 00</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="info">
-                                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                                            <p class="in-p ti">info@project.az</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Mail -->
-                        <div class="col-lg-4 col-md-6 col-sm-12 mail">
-                            <h3>Have a Question?</h3>
-                            <form id="contactform" class="contact-form" name="contactform" method="post" novalidate>
-                                <div class="form-group">
-                                    <input type="text" required class="form-control input-custom input-full" name="firstname" placeholder="Your Name">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" required class="form-control input-custom input-full" name="phonenumber" placeholder="Phone Number">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control input-custom input-full" name="email" placeholder="Your Email">
-                                </div>
-                                <div class="form-group">
-                                    <textarea class="form-control textarea-custom input-full" id="ccomment" name="message" required rows="1" placeholder="Your Message"></textarea>
-                                </div>
-                                <button type="submit" id="submit-contact" class="btn btn-primary btn-lg">Send Request</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="second-footer">
-                <div class="container">
-                    <p>2021 © Copyright - All Rights Reserved.</p>  
-                </div>
-            </div>
-    
-        </div>
-        </section>
-
-
+    {% include 'website/contact.html'%}
 
     <a href="#" class="scroll-to-top" style="display: block;"> <i class="fas fa-angle-up"></i></a>
 
     
 
 
-     <script src="../../../main/static/website/js/jquery-3.5.1.js"></script>
-    <script src="../../../main/static/website/js/service-detail.js"></script>
-    <script src="../../../main/static/website/js/scroll.js"></script>
+     <script src="../../static/website/js/jquery-3.5.1.js"></script>
+    <script src="../../static/website/js/service-detail.js"></script>
+    <script src="../../static/website/js/scroll.js"></script>
  </body>  
 </html>

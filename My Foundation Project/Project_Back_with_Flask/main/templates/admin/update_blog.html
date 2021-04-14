@@ -1,0 +1,21 @@
+{% extends "admin/index.html" %}
+{% block page %}
+<div class="container">
+    <h2>Blogu yenile</h2>
+    <form action="/admin/blog/update/{{blog.id}}" method="POST" enctype="multipart/form-data">
+        <div class="form-group my-2">
+            <input type="text" name="title" class="form-control" value="{{blog.title}}" placeholder="Başlıq">
+        </div>
+        <div class="form-group my-2">
+            <input type="text" name="content" class="form-control" value="{{blog.content}}" placeholder="Qısa açıqlama">
+        </div>
+        <div class="form-group my-2">
+            <input type="file" name="image" class="form-control" value="{{blog.image}}" placeholder="Şəkil">
+        </div>
+        <div class="form-group my-2">
+            <input type="date" name='time' value="{{blog.time}}" placeholder="date" class="form-control">
+          </div>
+        <input class="p-2 mb-2 bg-primary text-white" type="submit" value="Yenilə">
+      </form>
+</div>
+{% endblock %}

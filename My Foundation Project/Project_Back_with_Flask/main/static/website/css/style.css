@@ -133,43 +133,28 @@
 
 /*end navbar*/
 /*Slider*/
-.myslider {
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
   max-width: 100%;
-  min-height: 450px;
   position: relative;
   margin: auto;
+  
+}
+img {
+    height: 350px;
+    width: 100%;
+}
+
+/* Hide the images by default */
+.mySlides {
   display: none;
 }
 
-.myslider .container {
-  padding: 0px 15px;
-  margin: 0px auto;
-}
-
-.myslider .slider-text {
-  padding-top: 80px;
-}
-
-.myslider .slider-text h3 {
-  font-size: 50px;
-  font-weight: 100;
-  color: #fff;
-  line-height: 150%;
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-}
-
-.myslider .slider-text p {
-  font-size: 20px;
-  font-weight: 100;
-  color: #fff;
-  text-align: justify;
-  line-height: 180%;
-  margin-top: 20px;
-  font-family: "Open Sans", sans-serif;
-}
-
-.left, .right {
+/* Next & previous buttons */
+.prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -179,50 +164,59 @@
   color: white;
   font-weight: bold;
   font-size: 18px;
-  -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
-.right {
+/* Position the "next button" to the right */
+.next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-.left:hover, .right:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
 }
 
-.anima {
-  -webkit-animation-name: slider-anima;
-  -webkit-animation-duration: 1.8s;
-  animation-name: slider-anima;
-  -webkit-animation-duration: 0.2s;
-          animation-duration: 0.2s;
+/* Caption text */
+.title {
+  color: #f2f2f2;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 40%;
+  left: 5%;
 }
 
-@-webkit-keyframes slider-anima {
-  from {
-    opacity: .4;
-  }
-  to {
-    opacity: 1;
-  }
+
+.content {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 25%;
+  left: 5%;
 }
 
-@keyframes slider-anima {
-  from {
-    opacity: .4;
-  }
-  to {
-    opacity: 1;
-  }
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 /*end slider*/
 /*service*/
 .service {
@@ -1027,10 +1021,9 @@
 }
 
 /*Headings*/
-.header-img {
+.header-img  .img{
   max-width: 100%;
   height: 230px;
-  background-image: url("../../static/website/image/Services/service - detail.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -1095,7 +1088,7 @@
 #service-heading .menu div.active span.light {
   background-color: #303F9F;
   left: 0;
-  height: 100%;
+  height: 300px;
   width: 3px;
   top: 0;
 }
@@ -1284,7 +1277,7 @@ ul.text li .detail-heading::after {
 
 .p-detail-img img {
   width: 100%;
-  height: auto;
+  height: 300px;
   margin-top: 20px;
   vertical-align: middle;
   border: 0px;

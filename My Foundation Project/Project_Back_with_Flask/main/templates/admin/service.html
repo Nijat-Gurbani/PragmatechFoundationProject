@@ -1,0 +1,29 @@
+{% extends "admin/index.html" %}
+
+{% block page %}
+<h4>Xidmetlerimiz</h4>
+<a href="/admin/service/add_service"><button class="btn btn-primary">Xidmet Elave et</button></a>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Xidmet adi</th>
+        <th scope="col">Açıqlama Mətni</th>
+        <th scope="col">Xidmet iconu</th>
+        <th scope="col">Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for sliderss in sliders %}
+    <tr>
+        <th>{{sliderss.id}}</th>
+      
+        <td>
+            <a class="p-2 mb-2 bg-danger text-white" href="/admin/slider/delete/{{sliderss.id}}">Sil</a>
+            <a class="p-2 mb-2 bg-primary text-white" href="/admin/slider/update/{{sliderss.id}}">Yenile</a>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

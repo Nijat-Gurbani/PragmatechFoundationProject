@@ -1,0 +1,33 @@
+{% extends "admin/index.html" %}
+{% block page %}
+<form action="/admin/blog/add_blog" method='POST'class="forms-sample col-12" enctype="multipart/form-data" >
+    <div class="form-group">
+      <input type="text" class="form-control" name='title' placeholder='Başlıq'>
+    </div>
+    <div class="form-group">
+      <input type="file" class="form-control" name='image'>
+    </div>
+    
+    <div class="form-group">
+      <textarea type="textarea" name="content" id="summernote"   class="form-control" placeholder="Yazı"></textarea> 
+    </div>
+    <div class="form-group">
+      <input type="date" name='time' placeholder="date" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <select name="tag" id=""class="form-control">
+        <option value="">Tag seç</option>
+        {% for i in all_tag %}
+        <option value="{{i.id}}" >{{i.name}}</option>
+        {% endfor %}
+      </select>
+      
+    </div>
+  
+    <div class="form-group ">
+      <input type="submit" class="btn btn-primary" value="Əlavə Et">
+    </div>
+
+  </form> 
+{% endblock %}

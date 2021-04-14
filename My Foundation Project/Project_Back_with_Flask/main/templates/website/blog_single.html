@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../static/website/css/style.css">
+  <link rel="stylesheet" href="../../static/website/css/Responsive Grid System/grid.css">
+  <link rel="stylesheet" href="../../static/website/css/offer.css">
+  <link rel="stylesheet" href="../../static/website/css/contact.css">
+  <link rel="stylesheet" href="../../static/website/css/blog_detail.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<!-- Top Header -->
+{% include 'website/top_header.html'%}
+<!-- Section Header menu  -->
+{% include 'website/navbar.html'%}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="xeber">
+                <img src="../../static/uploads/{{blog.image}}" alt="">
+            <div class="blog-info">
+                <h3>{{blog.title}}</h3>
+                <div class="date">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    <p>{{blog.date}} | 
+                        {% for object in list %}
+                        
+                        {% endfor %}
+                    </p>
+                </div>
+                <p class="mb-4">{{blog.content}}</p>
+            
+            </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+{% include 'website/contact.html'%}
+<!--Section Contact -->
+
+
+<a href="#" class="scroll-to-top" style="display: block;"> <i class="fas fa-angle-up"></i></a>
+
+<script src="../../static/website/js/jquery-3.5.1.js"></script>
+
+<!-- Project -->
+<script src="../../static/website/js/lightcase.js"></script>
+<script src="../../static/website/js/smooth-scroll.min.js"></script>
+<script src="../../static/website/js/isotope.pkgd.min.js"></script>
+<script src="../../static/website/js/imagesloaded.pkgd.min.js"></script>
+<script src="../../static/website/js/port.js"></script>
+
+<!-- Header Slider Js -->
+<script src="../../static/website/js/slider.js"></script>
+
+
+
+<script src="../../static/website/js/portfolio.js"></script>
+<!-- Scroll Js -->
+<script src="../../static/website/js/scroll.js"></script>
+</body>
+</html>

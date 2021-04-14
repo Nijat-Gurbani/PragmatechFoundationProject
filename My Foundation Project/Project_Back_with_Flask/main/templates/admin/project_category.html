@@ -1,0 +1,28 @@
+{% extends "admin/index.html" %}
+{% block page %}
+<h5>Kategoriyalar</h5> 
+    <a href="/admin/project_category/add_category"><button class="btn btn-primary">Yeni Kateqoriya Elave Et</button></a>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Kateqoriya</th>
+            <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody>
+            
+        {% for category in all_category %}
+        <tr>
+            <th>{{category.id}}</th>
+            <td>{{category.name}}</td>
+            <td>
+                <a class="p-2 mb-2 bg-danger text-white" href="/admin/project_category/delete/{{category.id}}">Sil</a>
+                <a class="p-2 mb-2 bg-primary text-white" href="/admin/project_category/update/{{category.id}}">Yenile</a>
+            </td>
+        </tr>
+        {% endfor %}
+            
+        </tbody>
+      </table>
+{% endblock %}

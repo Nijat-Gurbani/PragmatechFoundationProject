@@ -1,0 +1,27 @@
+{% extends "admin/index.html" %}
+{% block page %}
+
+<div class="col-lg-10 m-auto card card-body " >
+            
+            
+    <address class="text-primary d">
+        <h3 class="font-weight-bold"> Email </h3>
+        <p class="mb-2 text-dark h4"> {{data.email}}</p>
+    <br>
+        <h3 class="font-weight-bold"> Ad</h3>
+        <p class="mb-2 text-dark h4">{{data.fullname}}</p>
+    <br>
+        <h3 class="font-weight-bold"> Basliq </h3>
+        <p class="mb-2 text-dark h4"> {{data.subject}}</p>
+    <br>
+        <h3 class="font-weight-bold"> Mesaj</h3>
+        <p class="mb-2 text-dark h4">{{data.message}}</p>
+    </address>
+ 
+  
+  
+
+  
+
+  </div> 
+{% endblock %}

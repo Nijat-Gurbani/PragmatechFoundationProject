@@ -1,0 +1,37 @@
+{% extends "admin/index.html" %}
+{% block page %}
+<div class="container">
+    <h2>Proyekti yenile</h2>
+    <form action="/admin/project/update/{{project.id}}" method="POST" enctype="multipart/form-data">
+        <div class="form-group my-2">
+            <input type="text" name="name" class="form-control" value="{{project.name}}" placeholder="Başlıq">
+        </div>
+        <div class="form-group my-2">
+            <input type="text" name="company" class="form-control" value="{{project.company}}" placeholder="Sirket adi">
+        </div>
+        <div class="form-group my-2">
+            <input type="file" name="image" class="form-control" value="{{project.image}}" placeholder="Şəkil">
+        </div>
+        <div class="form-group my-2">
+            <input type="text" name="content" class="form-control" value="{{project.content}}" placeholder="Qısa açıqlama">
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="text" name="url" value="{{project.url}}" placeholder="url" id="example-text-input"
+                required>
+        </div>
+        <div class="form-group my-2">
+            <input type="date" name='time' value="{{project.time}}" placeholder="date" class="form-control">
+          </div>
+          <div class="form-group">
+            <select name="category" id=""class="form-control">
+              <option value="">Kateqqoriyani deyisdir</option>
+              {% for cat in category %}
+              <option value="{{cat.id}}" >{{cat.name}}</option>
+              {% endfor %}
+            </select>
+        <br><br>
+        </div>
+        <input class="p-2 mb-2 bg-primary text-white" type="submit" value="Yenilə">
+      </form>
+</div>
+{% endblock %}

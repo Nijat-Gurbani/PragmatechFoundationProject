@@ -1,0 +1,47 @@
+{% extends "admin/index.html" %}
+{% block page %}
+<h3>Blog Postlari</h4>
+<a href="/admin/blog/add_blog"><button class="btn btn-primary">Yeni Blog Yarat</button></a>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Blog Basligi</th>
+        <th scope="col"></th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    {% for blog in all_blog %}
+    <tr>
+        <th>{{blog.id}}</th>
+        <td>{{blog.title}}</td>
+        <td>
+            <a class="p-2 mb-2 bg-danger text-white" href="/admin/blog/delete/{{blog.id}}">Sil</a>
+            <a class="p-2 mb-2 bg-primary text-white" href="/admin/blog/update/{{blog.id}}">Yenile</a>
+        </td>
+    </tr>
+    {% endfor %}
+     
+        
+    </tbody>
+  </table>
+
+
+<div class="container my-5">
+    <div class="row">
+        <div class="card" style="width: 18rem;">
+            <img src="" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Blog Title | Tag</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+</div>
+
+ 
+
+  
+{% endblock %}
