@@ -1,0 +1,21 @@
+{% extends "admin/index.html" %}
+{% block page %}
+<div class="container">
+    <h2>Melumatlari elave et</h2>
+    <form action="/admin/about/add_about" method="POST" enctype="multipart/form-data">
+        <div class="form-group my-2">
+            <input type="text" name="title" class="form-control" placeholder="Başlıq">
+        </div>
+        <div class="form-group my-2">
+            <input type="text" name="content" class="form-control" placeholder="Açıqlama">
+        </div>
+        <div class="form-group my-2">
+            <input type="file" name="image" class="form-control" placeholder="Şəkil">
+        </div>
+        <input class="btn btn-primary" type="submit" value="Əlavə et">
+      </form>
+</div>
+
+
+
+{% endblock %}

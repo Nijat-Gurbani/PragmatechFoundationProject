@@ -66,5 +66,18 @@ class Project(db.Model):
     url=db.Column(db.String(50))
     category_id=db.Column(db.Integer, db.ForeignKey('Project_Category.id'), nullable=False)
 
+class About(db.Model):
+    id=db.Column(db.Integer, primary_key=True)
+    title=db.Column(db.String(100))
+    content=db.Column(db.String(100))
+    image=db.Column(db.String(50))
 
+class Service_Detail(db.Model):
+    id=db.Column(db.Integer, primary_key=True)
+    title=db.Column(db.String(50))
+    content=db.Column(db.String(100))
+    image=db.Column(db.String(50))
 
+class Choose(db.Model):
+    id=db.Column(db.Integer, primary_key=True)
+    content=db.Column(db.String(100))

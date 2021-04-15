@@ -139,7 +139,6 @@
                                     </li>
                                 </ul>
                             </div>
-                           <span><a href="#" style="text-decoration: none;">View All</a></span>
                         </div>
                     </div>
                 </div>
@@ -154,7 +153,30 @@
 
 
 <!-- Section Choose-->
-{% include 'website/choose.html'%}
+<section>
+    <div class="choose">
+      <div class="container">
+          <div class="choose-heading">
+              <h2 style="text-align: center;">Why <span>Choose Us?</span></h2>
+              <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, iusto.</p>
+          </div>  
+          <div class="row row-1">
+              {% for choose in chooses %}
+              <div class="col-lg-4 col-md-6 col-xs-12">
+                <div class="choose-item">
+                    <div class="choose-text">
+                      <i class="fas fa-coins fa-3x"></i>
+                      <p>{{choose.content}}</p>
+                    </div>
+                </div>
+              </div>
+              {% endfor %}
+              
+          </div>
+        
+      </div>
+  </div>
+    </section>
 <!--  End Section Choose -->
 
 
@@ -185,11 +207,11 @@
                     <div class="portfolio-text">
                         {% for category in categories %}
                         {% if project.category_id==category.id %}
-                        <a href=""><h4>{{category.name}}</h4></a>
+                        <a style="text-decoration:none;" href=""><h4>{{category.name}}</h4></a>
                         {% endif %}
                         {% endfor %}
                         
-                        <a href=""><h4>{{project.name}}</h4></a>
+                        <a style="text-decoration:none;" href=""><h4>{{project.name}}</h4></a>
                     </div>
                 </div>
                
@@ -235,86 +257,7 @@
                 </div>
             </div>
             {% endfor %}
-            
-
         </div>
-        <!-- <div class="row margin">
-            <div class="col-lg-4 col-md-6 col-xs-12 blog-pots">
-                <div class="single-blog-post">
-                    <div class="img-box">
-                        <img src="../../static/website/image/blog/blog-1.jpg" alt="">
-                        <div class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-link"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-info">
-                        <a href="#"><h3>Every Blog Post With Image</h3></a>
-                        <div class="date">
-                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                            <p>February 10, 2018 | <i class="far fa-user"></i>Admin | <i class="far fa-eye"></i>4</p>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum rerum beatae consequatur, totam fugit, alias fuga aliquam.</p>
-                        <a href="#" class="btn btn-secondary">Read More...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-xs-12 blog-pots hover-effect">
-                <div class="single-blog-post">
-                    <div class="img-box">
-                        <img src="../../static/website/image/blog/blog-2.jpg" alt="">
-                        <div class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-link"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-info">
-                        <a href="#"><h3>Every Blog Post With Image</h3></a>
-                        <div class="date">
-                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                            <p>February 10, 2018 | <i class="far fa-user"></i>Admin | <i class="far fa-eye"></i>4</p>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum rerum beatae consequatur, totam fugit, alias fuga aliquam.</p>
-                        <a href="#" class="btn btn-secondary">Read More...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-xs-12 blog-pots hover-effect pt3">
-                <div class="single-blog-post">
-                    <div class="img-box">
-                        <img src="../../static/website/image/blog/blog-3.jpg" alt="">
-                        <div class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-link"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-info">
-                        <a href="#"><h3>Every Blog Post With Image</h3></a>
-                        <div class="date">
-                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                            <p>February 10, 2018 | <i class="far fa-user"></i>Admin | <i class="far fa-eye"></i>4</p>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum rerum beatae consequatur, totam fugit, alias fuga aliquam.</p>
-                        <a href="#" class="btn-blog btn-secondary">Read More...</a>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </div>
     </section>
 <!-- End Section Blog -->
@@ -331,6 +274,7 @@
 <!-- Project -->
 <script src="../../static/website/js/lightcase.js"></script>
 <script src="../../static/website/js/smooth-scroll.min.js"></script>
+<script src="../../static/website/js/nav.js"></script>
 <script src="../../static/website/js/isotope.pkgd.min.js"></script>
 <script src="../../static/website/js/imagesloaded.pkgd.min.js"></script>
 <script src="../../static/website/js/port.js"></script>

@@ -19,29 +19,27 @@
 <!-- Section Header menu  -->
 {% include 'website/navbar.html'%}
 
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div class="xeber">
-                <img src="../../static/uploads/{{blog.image}}" alt="">
-            <div class="blog-info">
-                <h3>{{blog.title}}</h3>
-                <div class="date">
-                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                    <p>{{blog.date}} | 
-                        {% for object in list %}
-                        
-                        {% endfor %}
-                    </p>
-                </div>
-                <p class="mb-4">{{blog.content}}</p>
-            
+<section class="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-md-12 blog-pots">
+                <div class="row">
+                    <div class="col-md-12 mb-5">
+                            <img src="../../static/uploads/{{blog.image}}" alt="">
+                        <div class="blog-info">
+                            <h3>{{blog.title}}</h3>
+                            <div class="date">
+                                <p> {{blog.date}} | <i class="fa fa-comments-o" aria-hidden="true"></i> Audit</p>
+                            </div>
+                            <p class="mb-4">{{blog.content}}</p>
+                           
+                        </div>
+                    </div>
+                </div>     
             </div>
-            </div>
-            
         </div>
     </div>
-</div>
+</section>
 
 {% include 'website/contact.html'%}
 <!--Section Contact -->

@@ -34,19 +34,20 @@
 <section class="about-us">
     <div class="container">
         <div class="row">
+            {% for about in abouts %}
             <div class="col-lg-6 col-md-12 about-img">
-                <img src="../../static/website/image/about/g-5.jpg" alt="">
+                <img src="../../static/uploads/{{about.image}}" alt="">
             </div>
             <div class="col-lg-6 col-md-12 about-text">
                 <div class="about-heading">
-                    <h2>About <span>Us</span></h2>
+                    <h2>{{about.title}}</h2>
                 </div>
                 <div class="about-desc">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat cum dicta voluptates hic? Expedita, animi ipsa labore quos, ipsum aspernatur obcaecati pariatur suscipit magni rerum quam eum maxime sequi consectetur?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam reprehenderit ipsa deserunt. Totam ad exercitationem commodi? Facere ratione, nulla et quisquam soluta accusamus quas ullam, vel aliquam consectetur vero quia.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda distinctio dignissimos aliquam quos saepe, dicta totam maiores deserunt tempora, atque dolor sint voluptates magni ullam, laborum voluptate debitis perspiciatis explicabo.</p>
+                    <p>{{about.content}}</p>
                 </div>
             </div>
+            {% endfor %}
+         
         </div>
     </div>
     </section>

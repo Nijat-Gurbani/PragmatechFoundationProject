@@ -14,13 +14,14 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=True
 
 @app.route('/')
 def homepage():
-    from main.models import Slider, Team, Project_Category, Project, Blog
+    from main.models import Slider, Team, Project_Category, Project, Blog, Choose
     category=Project_Category.query.all()
     project=Project.query.all()
     team=Team.query.all()
     slider=Slider.query.all()
     blog=Blog.query.all()
-    return render_template('/website/homepage.html', sliders=slider, teams=team, categories=category, projects=project, blogs=blog)
+    choose=Choose.query.all()
+    return render_template('/website/homepage.html', sliders=slider, teams=team, categories=category, projects=project, blogs=blog, chooses=choose)
 
 @app.route('/blog')
 def blog():
@@ -35,14 +36,16 @@ def blog_detail(id):
 
 @app.route('/about')
 def about():
-    from main.models import Offer
-    offer=Offer.query.all()
-    return render_template('/website/about-us.html', offers=offer)
+    from main.models import About
+    about=About.query.all()
+    return render_template('/website/about-us.html', abouts=about)
 
 
 @app.route('/service')
-def service():
-    return render_template('/website/service-detail.html')
+def service_details():
+    from main.models import Service_Detail
+    service=Service_Detail.query.all()
+    return render_template('/website/service-detail.html', services=service)
 
 @app.route('/project/detail/<id>')
 def project(id):
@@ -50,6 +53,12 @@ def project(id):
     category=Project_Category.query.all()
     project=Project.query.get(id)
     return render_template('/website/project-detail.html', categories=category, project=project)
+
+@app.route('/choose')
+def choose():
+    from main.models import Choose
+    choose=Choose.query.all()
+    return render_template('/website/choose.html', chooses=choose)
 
 
 db=SQLAlchemy(app)

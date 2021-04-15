@@ -1,0 +1,26 @@
+{% extends "admin/index.html" %}
+{% block page %}
+<h3>Choose</h4>
+<a href="/admin/choose/add_choose"><button class="btn btn-primary">Yeni Choose Yarat</button></a>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Metn</th>
+        <th scope="col">Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for choose in chooses %}
+    <tr>
+        <th>{{choose.id}}</th>
+        <td>{{choose.content}}</td>
+        <td>
+            <a class="p-2 mb-2 bg-danger text-white" href="/admin/choose/delete/{{choose.id}}">Sil</a>
+            <a class="p-2 mb-2 bg-primary text-white" href="/admin/choose/update/{{choose.id}}">Yenile</a>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

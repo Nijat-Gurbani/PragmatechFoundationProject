@@ -1,101 +1,100 @@
 .offer{
-    padding: 50px 0px;
-    background: #F4F4F4;
+  padding: 25px 0px;
+  background: #F4F4F4;
 }  
 
 .offer-heading{
-    margin-bottom: 70px;
+  margin-bottom: 25px;
 }
 .offer-heading h2{
-  font-family: 'Raleway', sans-serif;
-  font-size: 35px;
-   font-weight: 300;
-   line-height: 130%;
-   margin-bottom: 10px;
-   text-transform: uppercase;
+font-family: 'Raleway', sans-serif;
+font-size: 30px;
+ font-weight: 300;
+ line-height: 130%;
+ margin-bottom: 10px;
+ text-transform: uppercase;
 }
 .offer-heading h2 span{
-  color:#099A71;
+color:#099A71;
 }
 
 
 .offer-heading p{
-    font-size: 18px;
-    font-weight: 200;
-    color: #909090;
-    line-height: 150%;
-    margin-bottom: 0px;
-    font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  color: #909090;
+  line-height: 150%;
+  margin-bottom: 0px;
+  font-family: 'Roboto', sans-serif;
 }
-  
+
 .hovblue{
-     margin-bottom: 30px;
+   margin-bottom: 100px;
 }
 .offer-inner {
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 00px;
- }
-
- .offer-img {
-  width: 360px;
-  width: 100%;
-  height: 300px; 
+position: relative;
+overflow: hidden;
+margin-bottom: 00px;
 }
-  
+
+.offer-img {
+width: 100%;
+height: 300px; 
+}
+
 .offer-details {
-   position: absolute;
-   top: 235px;
-   height: 100%;
-   padding: 20px;
-   color: #fff;
-   background-color:#099A71;
-   -webkit-transition: all 0.4s ease 0s;
-   transition: all 0.4s ease 0s;
+ position: absolute;
+ top: 235px;
+ height: 100%;
+ padding: 20px;
+ color: #fff;
+ background-color:#099A71;
+ -webkit-transition: all 0.4s ease 0s;
+ transition: all 0.4s ease 0s;
 }
-  
+
 .offer-details h3 a{
-  text-decoration: none;
+text-decoration: none;
 }
 
-  .offer-inner:hover .offer-details {
-    background-color: rgba(59, 82, 107, 0.96);
-    border-bottom: 4px solid #3b526b;
-  }
-  
-  .offer-inner:hover .offer-details {
-    top: 0; }
-  
-  .offer-details h3 a {
-    color: #fff; 
-  }
-  
-  .offer-details h3 {
-    font-family: 'Roboto', sans-serif;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    color: lightgrey;
-    font-size: 20px;
-    font-weight: 550;
-    -webkit-transition: all .5s ease;
-    transition: all .5s ease;
-    }
+.offer-inner:hover .offer-details {
+  background-color: rgba(59, 82, 107, 0.96);
+  border-bottom: 4px solid #3b526b;
+}
 
-    .offer-details p{
-      font-family: 'Roboto', sans-serif;
-      color: lightgrey;
-      font-size: 17px;
-    }
-  
-  .readmore {
-    color:#099A71;
-    display: inline-block;
-    font-size: 20px;
-    font-weight: 600;
-    margin-top: 20px;
-    position: relative;
-    -webkit-transition: all .5s ease;
-    transition: all .5s ease; }
-  
-  .offer-details .readmore:hover {
-    color: lightgrey; }
+.offer-inner:hover .offer-details {
+  top: 0; }
+
+.offer-details h3 a {
+  color: #fff; 
+}
+
+.offer-details h3 {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  color: lightgrey;
+  font-size: 20px;
+  font-weight: 550;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  }
+
+  .offer-details p{
+    font-family: 'Roboto', sans-serif;
+    color: lightgrey;
+    font-size: 17px;
+  }
+
+.readmore {
+  color:#099A71;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+  position: relative;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+
+.offer-details .readmore:hover {
+  color: lightgrey; }

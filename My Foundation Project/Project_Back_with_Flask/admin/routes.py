@@ -1,4 +1,6 @@
+from operator import imatmul
 from flask.signals import request_finished
+from werkzeug.datastructures import ContentRange
 from main import db,app, render_template, request, redirect, desc, url_for
 from werkzeug.utils import secure_filename
 from main.models import *
@@ -50,6 +52,7 @@ def blog_post():
 def message():
     data=Message.query.order_by(desc(Message.id))
     return render_template('/admin/message.html', data=data)
+
 @app.route('/admin/message/<id>')
 def post(id):
     data=Message.query.filter_by(id=id).first()
@@ -79,9 +82,20 @@ def projects():
     project=Project.query.all()
     return render_template('/admin/project.html',all_project=project)
 
+@app.route('/admin/about')
+def abouts():
+    about=About.query.all()
+    return render_template('/admin/about.html', abouts=about)
 
+@app.route('/admin/service_detail')
+def service_detail():
+    service=Service_Detail.query.all()
+    return render_template('/admin/service_detail.html', services=service)
 
-
+@app.route('/admin/choose')
+def choos():
+    choose=Choose.query.all()
+    return render_template('/admin/choose.html', chooses=choose)
 
 # ADD
 
@@ -215,6 +229,52 @@ def add_project():
         return redirect('/admin/project')
     return render_template('/admin/add_project.html', all_category=categorys, all_project=projects)
 
+# ADD About us
+@app.route('/admin/about/add_about', methods=['GET', 'POST'])
+def add_about():
+    if request.method == 'POST':
+        file = request.files['image']
+        filename = secure_filename(file.filename)
+        file.save(os.path.join(app.config['UPLOAD_PATH'], filename))
+        new_about=About(
+            title=request.form['title'],
+            content=request.form['content'],
+            image=filename
+        )
+        db.session.add(new_about)
+        db.session.commit()
+        return redirect('/admin/about')
+    return render_template('/admin/add_about.html')
+
+# Add Service Detail
+@app.route('/admin/service_detail/add_service_detail', methods=['GET', 'POST'])
+def add_service_detail():
+    if request.method == 'POST':
+        file = request.files['image']
+        filename = secure_filename(file.filename)
+        file.save(os.path.join(app.config['UPLOAD_PATH'], filename))
+        new_service_detail=Service_Detail(
+            title=request.form['title'],
+            content=request.form['content'],
+            image=filename
+        )
+        db.session.add(new_service_detail)
+        db.session.commit()
+        return redirect('/admin/service_detail')
+    return render_template('/admin/add_service_detail.html')
+
+# ADD Choose
+@app.route('/admin/choose/add_choose', methods=['GET', 'POST'])
+def add_choos():
+    if request.method == 'POST':
+        new_choose=Choose(
+            content=request.form['content']
+        )
+        db.session.add(new_choose)
+        db.session.commit()
+        return redirect('/admin/choose')
+    return render_template('/admin/add_choose.html')
+
 
 # DELETE
 
@@ -286,6 +346,31 @@ def delete_category(id):
     db.session.delete(CategoryForDelete)
     db.session.commit()
     return redirect('/admin/project_category')
+
+# Delete About Us
+@app.route('/admin/about/delete/<id>')
+def delete_about(id):
+    AboutForDelete=About.query.get(id)
+    db.session.delete(AboutForDelete)
+    db.session.commit()
+    return redirect('/admin/about')
+
+# Delete Service Detail
+@app.route('/admin/service_detail/delete/<id>')
+def delete_service_detail(id):
+    ServiceDetailForDelete=Service_Detail.query.get(id)
+    db.session.delete(ServiceDetailForDelete)
+    db.session.commit()
+    return redirect('/admin/service_detail')
+
+# Delete Choose
+@app.route('/admin/choose/delete/<id>')
+def delete_choose(id):
+    ChooseForDelete=Choose.query.get(id)
+    db.session.delete(ChooseForDelete)
+    db.session.commit()
+    return redirect('/admin/choose')
+
 
 # UPDATE
 
@@ -359,7 +444,6 @@ def update_team(id):
         return redirect('/admin/team')
     return render_template('/admin/update_team.html', user=TeamForUpdate)
 
-
 # Update Blog
 @app.route('/admin/blog/update/<id>', methods=['GET', 'POST'])
 def update_blog(id):
@@ -400,7 +484,6 @@ def update_project(id):
         return redirect('/admin/project')
     return render_template('/admin/update_project.html', project=ProjectForUpdate, category=categorys)
 
-
 # Update Project Category
 @app.route('/admin/project_category/update/<id>', methods=['GET', 'POST'])
 def update_project_category(id):
@@ -412,9 +495,42 @@ def update_project_category(id):
         return redirect('/admin/project_category')
     return render_template('/admin/update_category.html', category=CategoryForUpdate)
 
+# Update About Us
+@app.route('/admin/about/update/<id>', methods=['GET','POST'])
+def update_about(id):
+    AboutForUpdate=About.query.get(id)
+    if request.form == 'POST':
+        file = request.files['image']
+        filename = secure_filename(file.filename)
+        file.save(os.path.join(app.config['UPLOAD_PATH'], filename))
+        AboutForUpdate.title=request.form['title']
+        AboutForUpdate.content=request.form['content']
+        AboutForUpdate.image=filename
+        db.session.commit()
+        return redirect('/admin/about')
+    return render_template('/admin/update_about.html', about=AboutForUpdate)
+        
+# Update Service_Detail
+@app.route('/admin/service_detail/update/<id>', methods=['GET','POST'])
+def update_service_detail(id):
+    ServiceDetailForUpdate=Service_Detail.query.get(id)
+    if request.method == 'POST':
+        file = request.files['image']
+        filename = secure_filename(file.filename)
+        file.save(os.path.join(app.config['UPLOAD_PATH'], filename))
+        ServiceDetailForUpdate.title=request.form['title']
+        ServiceDetailForUpdate.content=request.form['content']
+        ServiceDetailForUpdate.image=filename
+        db.session.commit()
+        return redirect('/admin/service_detail')
+    return render_template('/admin/update_service_detail.html', service=ServiceDetailForUpdate)
 
-
-
-
-
-
+# Update Choose
+@app.route('/admin/choose/update/<id>', methods=['GET','POST'])
+def update_choos(id):
+    ChooseForUpdate=Choose.query.get(id)
+    if request.method == 'POST':
+        ChooseForUpdate.content=request.form['content']
+        db.session.commit()
+        return redirect('/admin/choose')
+    return render_template('/admin/update_choose.html', choose=ChooseForUpdate)

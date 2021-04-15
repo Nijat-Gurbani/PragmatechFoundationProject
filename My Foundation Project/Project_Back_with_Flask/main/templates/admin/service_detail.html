@@ -1,0 +1,32 @@
+{% extends "admin/index.html" %}
+{% block page %}
+<div class="container">
+    <h3>Haqqımızda</h3>
+    <a href="/admin/service_detail/add_service_detail"><button class="btn btn-primary">Melumatlari elave edin</button></a>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Servis Adi</th>
+            <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for i in services %}
+        <tr>
+            <th>{{i.id}}</th>
+            <td>{{i.title}}</td>
+            <td>
+                <a class="p-2 mb-2 bg-danger text-white" href="/admin/service_detail/delete/{{i.id}}">Sil</a>
+                <a class="p-2 mb-2 bg-primary text-white" href="/admin/service_detail/update/{{i.id}}">Yenile</a>
+            </td>
+        </tr>
+        {% endfor %}
+    
+        </tbody>
+      </table>
+</div>
+<br><br>
+
+
+{% endblock %}

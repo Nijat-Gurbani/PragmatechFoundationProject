@@ -1,0 +1,35 @@
+{% extends "admin/index.html" %}
+{% block page %}
+<div class="container">
+    <h3>Haqqımızda</h3>
+    <a href="/admin/about/add_about"><button class="btn btn-primary">Melumatlari elave edin</button></a>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Haqqımızda</th>
+            <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody>
+        
+    
+            {% for about in abouts %}
+            <tr>
+                <th>{{about.id}}</th>
+                <td>{{about.title}}</td>
+                <td>
+                    <a class="p-2 mb-2 bg-danger text-white" href="/admin/about/delete/{{about.id}}">Sil</a>
+                    <a class="p-2 mb-2 bg-primary text-white" href="/admin/about/update/{{about.id}}">Yenile</a>
+                </td>
+            </tr>
+            {% endfor %}
+         
+            
+        </tbody>
+      </table>
+</div>
+<br><br>
+
+
+{% endblock %}
