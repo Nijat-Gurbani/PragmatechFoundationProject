@@ -1,10 +1,14 @@
 
 # # Task 1
+def toplama():
 
-a=int(input('Ilk reqemi daxil edin : '))
-b=int(input('Ikinci reqemi daxil edin : '))
+    a=int(input('Ilk reqemi daxil edin : '))
+    b=int(input('Ikinci reqemi daxil edin : '))
 
-print((a+b)/2)
+    print((a+b)/2)
+
+toplama()
+
 
 #Task 2
 

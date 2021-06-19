@@ -21,7 +21,7 @@
   background: #25272E;
   color: #7f8997;
   display: block;
-  padding: 8px 0;
+  padding: 5px 0;
 }
 
 .header-top .container {
@@ -43,15 +43,15 @@
 .header-top p {
   margin-right: 20px;
   color: #fff;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 300;
   margin-bottom: 0px;
 }
 
 .header-top p i {
-  color: #18ba60;
+  color: #099A71;
   margin-right: 5px;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .header-top .social-icons {
@@ -60,7 +60,7 @@
 
 .header-top .social-icons i {
   line-height: 26px;
-  font-size: 18px;
+  font-size: 15px;
   margin-right: 15px;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
@@ -84,23 +84,23 @@
 
 /* navbar*/
 #navbar {
-  min-height: 20px;
+  min-height: 15px;
   width: 100%;
   background-color: #FFFFFF;
 }
 
 .menu {
-  padding: 10px;
+  padding: 1px;
 }
 
 .header-logo {
   float: left;
-  padding: 10px;
+  padding: 5px;
 }
 
 .header-menu {
   float: right;
-  font-size: 22px;
+  font-size: 15px;
   color: #3B3B3B;
 }
 
@@ -110,7 +110,7 @@
 }
 
 .nav li a {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Raleway", sans-serif;
   display: block;
   color: black;
@@ -126,7 +126,7 @@
 }
 
 .nav li a:hover {
-  background-color: #18BA60;
+  background-color: #099A71;
   color: #F1EDDF;
   border-radius: 5px;
 }
@@ -231,7 +231,7 @@
 
 .service .service-heading h2 {
   font-family: "Raleway", sans-serif;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 300;
   line-height: 130%;
   margin-bottom: 10px;
@@ -239,12 +239,12 @@
 }
 
 .service .service-heading h2 span {
-  color: #18ba60;
+  color: #099A71;
 }
 
 .service .service-1 {
-  margin-top: 50px;
-  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 
 .service .service-2 {
@@ -253,10 +253,10 @@
 
 .service .service-item {
   background-color: #F4F4F4;
-  color: #18ba60;
+  color: #099A71;
   text-align: center;
-  padding: 25px;
-  border-radius: 5px;
+  padding: 15px;
+  border-radius: 25px;
   border: 1px solid #f1f1f1;
 }
 
@@ -282,7 +282,7 @@
 }
 
 .service .service-item .service-text {
-  font-size: 18px;
+  font-size: 15px;
   text-align: left;
   color: #555;
 }
@@ -291,7 +291,7 @@
 #section-statistic .statistic-heading h2 {
   color: white;
   font-family: "Raleway", sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 300;
   line-height: 130%;
   margin: 40px 0;
@@ -300,7 +300,7 @@
 }
 
 #section-statistic .statistic-heading h2 span {
-  color: #18ba60;
+  color: #099A71;
 }
 
 #section-statistic .section-image {
@@ -325,19 +325,19 @@
 }
 
 #section-statistic .container .countup-box .far {
-  font-size: 40px;
-  padding: 20px;
-  border: 4px solid #18ba60;
-  border-radius: 5px;
-  margin-right: 1.5rem;
+  font-size: 30px;
+  padding: 10px;
+  border: 4px solid #099A71;
+  border-radius: 18px;
+  margin-right: 0.5rem;
   color: white;
 }
 
 #section-statistic .container .countup-box .countup-text p {
   color: white;
-  font-size: 45px;
+  font-size: 30px;
   margin-bottom: 5px;
-  color: #18ba60;
+  color: #099A71;
   font-weight: 200;
   font-family: "Open Sans", sans-serif;
   text-align: left;
@@ -345,7 +345,7 @@
 
 #section-statistic .container .countup-box .countup-text h3 {
   color: white;
-  font-size: 35px;
+  font-size: 25px;
   text-align: left;
 }
 
@@ -357,7 +357,7 @@
 
 .choose .choose-heading h2 {
   font-family: "Raleway", sans-serif;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 300;
   line-height: 130%;
   margin-bottom: 10px;
@@ -365,7 +365,7 @@
 }
 
 .choose .choose-heading h2 span {
-  color: #18ba60;
+  color: #099A71;
 }
 
 .choose .row-1 {
@@ -379,9 +379,9 @@
 
 .choose .choose-item {
   background-color: #F4F4F4;
-  color: #18ba60;
+  color: #099A71;
   text-align: center;
-  padding: 25px;
+  padding: 20px;
   border-radius: 5px;
   border: 1px solid #f1f1f1;
 }
@@ -393,14 +393,12 @@
 }
 
 .choose .choose-item .choose-text i {
-  padding-top: 8px;
-  padding-right: 10px;
   text-align: left;
 }
 
 .choose .choose-item .choose-text p {
   color: black;
-  font-size: 19px;
+  font-size: 15px;
   font-weight: 500;
   font-family: "Open Sans", sans-serif;
   margin: 5px 0;
@@ -409,17 +407,17 @@
 /*end choose*/
 /*Section Blog*/
 .blog .margin {
-  padding-top: 40px;
+  padding-top: 25px;
 }
 
 .blog {
-  padding: 50px 0;
+  padding: 40px 0;
   background: #FFFFFF;
 }
 
 .blog .sec-title {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .blog .sec-title h2 {
@@ -432,7 +430,7 @@
 }
 
 .blog .sec-title h2 span {
-  color: #18ba60;
+  color: #099A71;
 }
 
 .blog .sec-title .separator {
@@ -444,7 +442,7 @@
 
 .blog .blog-info {
   background: #F4F4F4;
-  border-bottom: 3px solid #18ba60;
+  border-bottom: 3px solid #099A71;
   padding: 20px 5px;
 }
 
@@ -496,7 +494,7 @@
 }
 
 .blog .blog-pots .date .fa-calendar {
-  color: green;
+  color: #099A71;
   font-size: 18px;
   font-weight: unset;
   margin-right: 5px;
@@ -504,21 +502,21 @@
 }
 
 .blog .blog-pots .date .fa-user {
-  color: green;
+  color: #099A71;
   font-size: 18px;
   font-weight: unset;
   margin-right: 5px;
 }
 
 .blog .blog-pots .date .fa-eye {
-  color: green;
+  color: #099A71;
   font-size: 18px;
   font-weight: unset;
   margin-right: 5px;
 }
 
 .btn-secondary {
-  background: #18ba60;
+  background: #099A71;
   color: #fff;
   display: inline-block;
   font-weight: normal;
@@ -593,7 +591,7 @@
 }
 
 .single-blog-post .img-box .overlay .box .content ul li a .fa {
-  color: #18ba60;
+  color: #099A71;
   font-size: 1.5rem;
   text-align: center;
   background: #fff;
@@ -608,7 +606,7 @@
 
 .single-blog-post .img-box .overlay .box .content ul li a .fa:hover {
   background: #3b526b;
-  border-color: #18ba60;
+  border-color: #099A71;
   color: #fff;
 }
 
@@ -621,7 +619,7 @@
 
 .team .sec-title {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 .team .sec-title h2 {
@@ -634,7 +632,7 @@
 }
 
 .team .sec-title h2 span {
-  color: #18ba60;
+  color: #099A71;
 }
 
 .team .team-all {
@@ -643,7 +641,7 @@
 }
 
 .team-wrap {
-  padding-bottom: 70px;
+  padding-bottom: 10px;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -690,15 +688,15 @@
   text-transform: uppercase;
   margin-bottom: 0px;
   color: #fff;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .team-content p {
   color: #fff;
   font-style: italic;
   margin-bottom: 10px;
-  font-size: 15px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 600;
   letter-spacing: 1px;
 }
 
@@ -743,7 +741,7 @@
 }
 
 .team-content span a:hover {
-  color: #18ba60;
+  color: #099A71;
 }
 
 .team .team-pro ul li {
@@ -796,7 +794,7 @@
 }
 
 .portfolio .section-title h2 span {
-  color: #18ba60;
+  color: #099A71;
 }
 
 .portfolio .filters-group {
@@ -826,7 +824,7 @@
 }
 
 .portfolio .filters-group ul li:hover {
-  background: #18ba60;
+  background: #099A71;
   color: #fff;
 }
 
@@ -994,7 +992,7 @@
 }
 
 .about-us .about-text h2 span {
-  color: #18ba60;
+  color: #099A71;
 }
 
 .about-us .about-text p {
@@ -1016,7 +1014,7 @@
   bottom: 20px;
   right: 10px;
   border-radius: 30px;
-  background-color: #18BA60;
+  background-color: #099A71;
   width: 50px;
   height: 50px;
   text-align: center;
@@ -1030,7 +1028,7 @@
 .header-img {
   max-width: 100%;
   height: 230px;
-  background-image: url("../../image/Services/service - detail.jpg");
+  background-image: url("../image/Services/service - detail.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;

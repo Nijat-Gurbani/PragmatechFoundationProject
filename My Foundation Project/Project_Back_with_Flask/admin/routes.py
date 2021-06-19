@@ -97,6 +97,9 @@ def choos():
     choose=Choose.query.all()
     return render_template('/admin/choose.html', chooses=choose)
 
+
+
+
 # ADD
 
 photo_index=0   
@@ -276,6 +279,8 @@ def add_choos():
     return render_template('/admin/add_choose.html')
 
 
+
+
 # DELETE
 
 # Delete Slider
@@ -370,6 +375,8 @@ def delete_choose(id):
     db.session.delete(ChooseForDelete)
     db.session.commit()
     return redirect('/admin/choose')
+
+
 
 
 # UPDATE

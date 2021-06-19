@@ -1,0 +1,38 @@
+/*Color*/
+$main-section-color-1:#FFFFFF;
+$main-section-color-2:#F4F4F4;
+$main-color:#099A71;
+$main-item-color-2:#F4F4F4;
+$main-h-color:#3B3B3B;
+$main-p-color:#909090;
+
+/*Font*/
+$main-h-font:'Raleway', sans-serif;
+$main-p-font:'Open Sans', sans-serif;
+
+
+// h-headings
+/*h2*/
+/*h4*/
+
+//border
+$main-column-border:1px solid #e6e6e6;
+$main-section-border:1px solid #efefef;
+
+/* P-class*/
+%paragraph{
+    font-size: 18px;
+    font-weight: 200;
+    color: $main-p-color;
+    line-height: 150%;
+    margin-bottom: 0px;
+}
+
+// column
+
+/*section padding*/
+
+%padding{
+    padding:50px 0px;
+}
+

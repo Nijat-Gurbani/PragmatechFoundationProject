@@ -24,7 +24,7 @@ def myfunc(text, num):
         print(text)
     num = num - 1
 # sonsuz dongu olmasi ucun num > 0 olmalidir
-# myfunc('Hello', 4)
+myfunc('Hello', 4)
 
 
 

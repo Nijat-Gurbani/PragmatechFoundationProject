@@ -3,7 +3,7 @@
   background: #25272E;
   color: #7f8997;
   display: block;
-  padding: 8px 0; }
+  padding: 5px 0; }
 
 
 .header-top .container {
@@ -22,7 +22,7 @@
   margin-bottom: 0px; }
 
 .header-top p i {
-  color: #18ba60;
+  color: #099A71;
   margin-right: 5px;
   font-size: 20px; }
 
@@ -64,7 +64,7 @@
 
     .header-logo{
         float: left;
-        padding:10px;
+        padding:1px;
        
 
     }
@@ -99,7 +99,7 @@
       }
     
     .nav li a:hover{
-        background-color:#18BA60;
+        background-color:#099A71;
         color:#F1EDDF;
         border-radius: 5px;
 
@@ -107,79 +107,98 @@
 /*end navbar*/
 
 /*Slider*/
-.myslider{
-    max-width: 100%;
-    min-height: 450px;
-    position: relative;
-    margin: auto;
-    display: none;
 
-    .container{
-        padding: 0px 15px;
-        margin: 0px auto;
-      }
-        .slider-text{
-            padding-top: 80px ;
-            h3{
-                font-size: 50px;
-                font-weight: 100;
-                color: #fff;
-                line-height: 150%;
-                margin: 0;
-                font-family: $main-h-font;
-            }
-            p{
-                font-size: 20px;
-                font-weight: 100;
-                color: #fff;
-                text-align: justify;
-                line-height: 180%;
-                margin-top: 20px;
-                font-family: $main-p-font;
-               }
-        }  
+* {box-sizing:border-box}
 
-      }
-      
-  .left, .right {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-
-  .right {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
   
-  .left:hover, .right:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
- 
-  .anima {
-    -webkit-animation-name: slider-anima ;
-    -webkit-animation-duration: 1.8s;
-    animation-name: slider-anima ;
-    animation-duration: 0.2s;
-    @-webkit-keyframes slider-anima  {
-        from {opacity: .4}
-        to {opacity: 1}
-      }
-      
-      @keyframes slider-anima  {
-        from {opacity: .4}
-        to {opacity: 1}
-      }
-  }
+}
+img {
+    height: 350px;
+    width: 100%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
   /*end slider*/
   
 /*service*/
@@ -198,7 +217,7 @@
       }
   
       h2 span{
-        color: #18ba60;
+        color: #099A71;
       }
 
         p{
@@ -214,7 +233,7 @@
     }
     .service-item{
         background-color: $main-item-color-2;
-        color: #18ba60;
+        color: #099A71;
         text-align: center;
         padding: 25px;
         border-radius: 5px;
@@ -261,7 +280,7 @@
            text-align: center;
           }
           h2 span{
-            color: #18ba60;
+            color:#099A71;
           }
   }
 
@@ -286,7 +305,7 @@
                 .far{
                   font-size: 40px;
                   padding: 20px;
-                  border: 4px solid #18ba60;
+                  border: 4px solid #099A71;
                   border-radius: 5px;
                   margin-right: 1.5rem;
                   color: white;
@@ -297,7 +316,7 @@
                     color: white; 
                     font-size: 45px;
                     margin-bottom: 5px;
-                    color: #18ba60;
+                    color: #099A71;
                     font-weight: 200;
                     font-family: $main-p-font;
                     text-align: left;
@@ -332,7 +351,7 @@
       }
     
       h2 span{
-        color: #18ba60;
+        color: #099A71;
       }
         p{
             @extend %paragraph;
@@ -347,7 +366,7 @@
     }
     .choose-item{
         background-color: $main-item-color-2;
-        color: #18ba60;
+        color: #099A71;
         text-align: center;
         padding: 25px;
         border-radius: 5px;
@@ -395,7 +414,7 @@
     }
   
     h2 span{
-      color: #18ba60;
+      color: #099A71;
     }
 
   }
@@ -408,7 +427,7 @@
   
   .blog .blog-info {
     background: $main-item-color-2;
-    border-bottom: 3px solid #18ba60;
+    border-bottom: 3px solid #099A71;
     padding: 20px 5px; }
   
   .blog .blog-pots img {
@@ -452,7 +471,7 @@
     margin-top: 10px;}
   
   .blog .blog-pots .date .fa-calendar {
-    color: green;
+    color: #099A71;
     font-size: 18px;
     font-weight:unset;
     margin-right: 5px;
@@ -460,20 +479,20 @@
   }
 
   .blog .blog-pots .date .fa-user {
-    color: green;
+    color: #099A71;
     font-size: 18px;
     font-weight:unset;
     margin-right: 5px;
   }
   .blog .blog-pots .date .fa-eye {
-    color: green;
+    color: #099A71;
     font-size: 18px;
     font-weight:unset;
     margin-right: 5px;
   }
   
   .btn-secondary {
-    background: #18ba60;
+    background: #099A71;
     color: #fff;
     display: inline-block;
     font-weight: normal;
@@ -540,7 +559,7 @@
     list-style: none; }
   
   .single-blog-post .img-box .overlay .box .content ul li a .fa {
-    color: #18ba60;
+    color: #099A71;
     font-size: 1.5rem;
     text-align: center;
     background: #fff;
@@ -554,7 +573,7 @@
   
   .single-blog-post .img-box .overlay .box .content ul li a .fa:hover {
     background: #3b526b;
-    border-color: #18ba60;
+    border-color: #099A71;
     color: #fff; }
 
 /*End Section Blog*/
@@ -583,7 +602,7 @@
   }
 
   h2 span{
-    color: #18ba60;
+    color: #099A71;
   }
 
 }
@@ -676,7 +695,7 @@
   bottom: 2px; }
 
 .team-content span a:hover {
-  color: #18ba60; }
+  color: #099A71; }
 
 .team .team-pro ul li {
   list-style: none;
@@ -723,7 +742,7 @@
     }
   
     h2 span{
-      color: #18ba60;
+      color: #099A71;
     }
       p{
           @extend %paragraph;
@@ -754,7 +773,7 @@
       transition: all .5s ease;
   }
   ul li:hover{
-      background: #18ba60;
+      background: #099A71;
       color: #fff; 
   }
 }
@@ -922,7 +941,7 @@
     }
 
     h2 span{
-      color: #18ba60;
+      color: #099A71;
     }
 
      p{
@@ -949,7 +968,7 @@
     bottom: 20px;
     right: 10px;
     border-radius: 30px;
-    background-color: #18BA60;
+    background-color: #099A71;
     width: 50px;
     height: 50px;
     text-align: center;
